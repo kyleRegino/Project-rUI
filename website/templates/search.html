@@ -1,0 +1,237 @@
+{% extends 'base_candidate.html' %}
+{% block content %}
+{% load static %}
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center-1 mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <div class="ftco-search">
+                    <div class="row">
+                        <div class="col-md-14 nav-link-wrap">
+                            <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Find a Job</a>
+                                <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Search</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-14 tab-wrap">
+                            
+                            <div class="tab-content p-4 " id="v-pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+                                    <form action="#" class="search-job">
+                                        <div class="row no-gutters">
+                                            <div class="col-md mr-md-2">
+                                                <div class="form-group">
+                                                    <div class="form-field">
+                                                        <div class="icon"><span class="icon-briefcase"></span></div>
+                                                        <input type="text" class="form-control" placeholder="eg. Garphic. Web Developer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md mr-md-2">
+                                                <div class="form-group">
+                                                    <div class="form-field">
+                                                        <div class="select-wrap">
+                                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">Category</option>
+                                                        <option value="">Full Time</option>
+                                                        <option value="">Part Time</option>
+                                                        <option value="">Freelance</option>
+                                                        <option value="">Internship</option>
+                                                        <option value="">Temporary</option>
+                                                    </select>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md mr-md-2">
+                                                <div class="form-group">
+                                                    <div class="form-field">
+                                                        <div class="icon"><span class="icon-map-marker"></span></div>
+                                                        <input type="text" class="form-control" placeholder="Location">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="form-group">
+                                                    <div class="form-field">
+                                                        <button type="submit" class="form-control btn btn-secondary">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+                                    <form action="#" class="search-job">
+                                        <div class="row">
+                                            <div class="col-md">
+                                                <div class="form-group">
+                                                    <div class="form-field">
+                                                        <div class="icon"><span class="icon-search"></span></div>
+                                                        <input type="text" class="form-control" placeholder="eg. Data Scientist">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <div class="form-field">
+                                                        <button type="submit" class="form-control btn btn-secondary">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Search Left side -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 sidebar">
+
+                <!-- Search criteria -->
+                <div class="row justify-content-center pb-3 ftco-animate">
+                    <div class="card ftco-animate" style="width: 18rem;">
+                        <div class="card-header">
+                            Search Criteria
+                        </div>
+
+                        <div class="input-group mb-3 mb-6 ">
+                            <input type="text" class="form-control borders" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Job Title">
+                        </div>
+                        <div class="input-group mb-3 mb-6">
+                            <input type="text" class="form-control borders" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="All location">
+                        </div>
+                        <div class="input-group mb-3 mb-6">
+                            <input type="text" class="form-control borders" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="All Specialization">
+                        </div>
+                        <div class="input-group mb-3 mb-6">
+                            <input type="text" class="form-control borders" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Minimum Salary (PHP)">
+                        </div>
+
+                        <div class="input-group mb-3 mb-6">
+                            <button type="button" class="btn btn-primary btn-sm btn-block">Search</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Browse Job -->
+                <div class="row justify-content-center pb-3 ftco-animate">
+                    <div class="card ftco-animate" style="width: 18rem;">
+                        <div class="card-header">
+                            Browse Job
+                        </div>
+
+                        <div class="list-group list-group-flush">
+                            <a href="" class="list-group-item list-group-item-action">Specialization</a>
+                            <a href="" class="list-group-item list-group-item-action">Position Level</a>
+                            <a href="" class="list-group-item list-group-item-action">Location</a>
+                            <a href="" class="list-group-item list-group-item-action">Company Names</a>
+                        </div>
+                        <hr>
+
+                        <div class="list-group list-group-flush">
+                            <a href="" class="list-group-item list-group-item-action">Fresh Grad Jobs</a>
+                            <a href="" class="list-group-item list-group-item-action">All Jobs</a>
+                            <a href="" class="list-group-item list-group-item-action">All Call Center/ BPO Jobs</a>
+                            <a href="" class="list-group-item list-group-item-action">Government Jobs</a>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+                <!-- Top Employers -->
+                <div class="row justify-content-center pb-3 ftco-animate">
+                    <div class="card ftco-animate" style="width: 18rem;">
+                        <div class="card-header">
+                            Top Employers
+                        </div>
+
+                        <div class="list-group list-group-flush">
+                            Companies picture
+                        </div>
+                    </div>
+                </div>
+
+
+    
+            </div>
+            
+            <div class="col-lg-9 pr-lg-5">
+                <div class="row">
+                    <div class="col-md-12 ftco-animate">
+
+                        <div class="card mb-6">
+                            <div class="row no-gutters">
+                                
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a href=""><h5 class="card-title">Job Title</h5></a>
+                                        <p class="card-text">Company Name</p>
+                                        <p class="card-text">Location</p>
+                                        <p class="card-text">Expected Salary</p>
+                                        <p class="card-text"><small class="text-muted">Information  </small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="card-img" alt="...">
+                                    Company Logo
+                                </div>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <a href="">more</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-6">
+                            <div class="row no-gutters">
+                                
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a href=""> <h5 class="card-title">Job Title</h5></a>
+                                        <p class="card-text">Company Name</p>
+                                        <p class="card-text">Location</p>
+                                        <p class="card-text">Expected Salary</p>
+                                        <p class="card-text"><small class="text-muted">Information  </small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="card-img" alt="...">
+                                    Company Logo
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="">more</a> 
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- end -->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
