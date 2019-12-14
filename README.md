@@ -1,8 +1,23 @@
 # Project-rUI
 
-'''python
+**Dependecies:**
+* python3
+Django
+
+
+**Download/clone folder**
+
+**Create virtualenv**
+* install dependencies
+
+**Run Website**
+* open directory of
+
+
+
+```python
 python3 manage.py runserver
-'''
+```
 
 UI consist of the following:
 http://127.0.0.1:8000/login/
